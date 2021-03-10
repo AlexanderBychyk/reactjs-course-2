@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = (env) => {
   const isProduction = env === 'production';
   return {
-    mode: 'development',
+    mode: isProduction ? 'production' : 'development',
     entry: './src/App.js',
     output: {
       filename: 'main.js',
