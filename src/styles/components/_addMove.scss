@@ -1,0 +1,16 @@
+.addMovieButton {
+  display: block;
+  background: rgba($gray, 0.65);
+  color: $primary;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: 0;
+  padding: 12px 20px;
+  margin: 20px;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  margin-right: 10rem;
+  justify-self: flex-end;
+}

@@ -8,11 +8,10 @@ export default class Header extends Component {
   render() {
     return (
       <div className="headerBlock">
-        <div className="container">
+        <div className="container horizontal">
           <SiteLogo />
           <AddMovie />
         </div>
-        <p className="headerLabel">FIND YOUR MOVIE</p>
         <SearchBar />
       </div>
     );

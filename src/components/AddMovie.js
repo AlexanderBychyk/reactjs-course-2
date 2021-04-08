@@ -4,7 +4,7 @@ export default class AddMovie extends Component {
   render () {
     return (
       <div>
-        <button>+ add movie</button>
+        <button className="addMovieButton">+ ADD MOVIE</button>
       </div>
     );
   }
