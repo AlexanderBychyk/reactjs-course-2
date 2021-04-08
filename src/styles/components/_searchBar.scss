@@ -1,0 +1,24 @@
+.searchButton {
+  background: $primary;
+  color: $white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: 0;
+  padding: 2rem 6rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 1.8rem;
+}
+.searchInput {
+  background: $secondaryDark;
+  opacity: 0.5;
+  color: $white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: 0;
+  width: 60rem;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 1.8rem;
+}
