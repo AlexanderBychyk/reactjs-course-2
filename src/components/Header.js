@@ -9,7 +9,9 @@ export default class Header extends Component {
     return (
       <div className="headerBlock">
         <div className="container horizontal">
-          <SiteLogo />
+          <div className="headerLogo">
+            <SiteLogo />
+          </div>
           <AddMovie />
         </div>
         <SearchBar />

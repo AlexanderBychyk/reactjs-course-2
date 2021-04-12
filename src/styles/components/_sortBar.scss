@@ -1,0 +1,71 @@
+.sortBox {
+  display: flex;
+  border: 0px;
+  border-bottom: 2px;
+  border-color: $secondaryLight;
+  border-style: solid;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  justify-content: space-between;
+}
+.sortButton {
+  background: rgba(0,0,0,0);
+  margin-right: 1rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  padding: 2rem 0 2rem 0;
+}
+.selectedButton {
+  border: 0px;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: $primary;
+}
+.filterBox {
+  display: block;
+  background: rgba(0,0,0,0);
+  margin-right: 1rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  justify-self: flex-end;
+  position: relative;
+  max-width: 400px; /* optional */
+}
+.filterBox label {
+  margin-right: 1rem;
+  color: $gray;
+}
+.filterBox select {
+  cursor: inherit;
+  background: rgba(0,0,0,0);
+  border: none;
+  font-weight: bold;
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 2rem 2rem 2rem 0;
+}
+.filterBox:after {
+  content: "\25bc";
+  color: $primary;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  padding: 0 2px;
+}
+
+.filterBox option::selection {
+  background-color: $primary;
+  font-weight: bold;
+}
+
+.filterBox option {
+  background-color: $secondaryLight;
+  font-weight: bold;
+  border: none;
+}

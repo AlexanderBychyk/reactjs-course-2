@@ -1,11 +1,16 @@
 .headerBlock {
-    // background: url(https://s.studiobinder.com/wp-content/uploads/2019/08/Best-Movies-on-Netflix-Featured-StudioBinder.jpg) center;
     background-image: url('/src/assets/blur.jpg');
     background-color: $gray;
-    // filter: blur(20px);
     background-position: center;
     background-size: 70;
-    height: 35rem;
+    height: fit-content;
+    padding-bottom: 10rem;
     width: 100%;
-    
+}
+.headerLogo{
+    display: block;
+    margin: 20px;
+    padding: 0;
+    margin-left: $border-header-size;
+    justify-self: flex-start;
 }

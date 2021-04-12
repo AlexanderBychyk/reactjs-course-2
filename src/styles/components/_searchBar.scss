@@ -9,7 +9,7 @@
   border-radius: 0.5rem;
   font-size: 1.8rem;
   width: 20rem;
-  margin-right: 15rem;
+  margin-right: $border-header-size;
 }
 .searchInput {
   display:inline;
@@ -25,13 +25,14 @@
   overflow: hidden;
   flex-grow: 2;
   margin-right: 20px;
-  margin-left: 15rem;
+  margin-left: $border-header-size;
 }
 .searchLabel{
     color: white;
     font-size: 4rem;
     margin: 10px;
-    margin-left: 15rem;
+    margin-bottom: 30px;
+    margin-left: $border-header-size;
     font-weight: 100;
     display:block;
 }

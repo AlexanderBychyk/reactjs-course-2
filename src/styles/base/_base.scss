@@ -5,11 +5,18 @@ html {
 }
 .container {
 	display: flex;
-    justify-content: space-between
+  justify-content: space-between
 }
 .horizontal{
   flex-direction: row;
 }
 .vertical{
   flex-direction: column;
+}
+::selection {
+  color: $white;
+  background-color: $primary;
+}
+h1 {
+  color: white;
 }

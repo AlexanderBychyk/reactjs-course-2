@@ -1,0 +1,13 @@
+.cardBox {
+  width: 24rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.cardPicture {
+  display: block;
+  height: 30rem;
+  width: 100%;
+  
+  background: center / cover no-repeat url('/src/assets/cardPic.png');
+  margin: 0;
+}
