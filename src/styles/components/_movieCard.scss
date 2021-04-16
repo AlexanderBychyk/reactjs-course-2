@@ -2,6 +2,8 @@
   width: 24rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  align-self: center;
+  justify-self: center;
 }
 .cardPicture {
   display: block;
@@ -9,5 +11,31 @@
   width: 100%;
   
   background: center / cover no-repeat url('/src/assets/cardPic.png');
+  margin: 0;
+}
+
+.cardYear {
+  border-style: solid;
+  border-color: $gray;
+  border-radius: 6px;
+  border-width: 1px;
+  padding: 3px 14px;
+  font-size: 14px;
+  align-self: center;
+  color: $gray;
+  margin-bottom: 0;
+}
+
+.cardName {
+  font-size: 16px;
+  align-self: center;
+  color: $white;
+  margin-bottom: 0;
+}
+
+.cardGanre {
+  font-size: 16px;
+  align-self: center;
+  color: $gray;
   margin: 0;
 }
