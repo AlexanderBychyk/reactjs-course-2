@@ -6,14 +6,17 @@ export default class MovieCard extends Component {
     super(props);
   }
   render() {
+    const movieName = this.props.movieName ? this.props.movieName : 'name';
+    const movieYear = this.props.movieYear ? this.props.movieYear : 'year';
+    const movieGanre = this.props.movieGanre ? this.props.movieGanre : 'ganre';
     return (
       <div className="cardBox">
         <div className="cardPicture"></div>
         <div className="container">
-          <h1 className="cardName">{this.props.movieName ? this.props.movieName : 'name'}</h1>
-          <h1 className="cardYear">{this.props.movieYear ? this.props.movieYear : 'year'}</h1>
+          <h1 className="cardName">{movieName}</h1>
+          <h1 className="cardYear">{movieYear}</h1>
         </div>
-        <h1 className="cardGanre">{this.props.movieGanre ? this.props.movieGanre : 'ganre'}</h1>
+        <h1 className="cardGanre">{movieGanre}</h1>
       </div>
     );
   }
@@ -27,6 +30,6 @@ MovieCard.propTypes = {
 
 MovieCard.defaultProps = {
   movieName: 'name',
-  movieYear: '2000',
+  movieYear: 2000,
   movieGanre: 'ganre'
 }

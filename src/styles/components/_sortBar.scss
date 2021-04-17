@@ -9,9 +9,9 @@
   justify-content: space-between;
 }
 .sortButton {
-  background: rgba(0,0,0,0);
+  background: $empty;
   margin-right: 1rem;
-  color: white;
+  color: $white;
   font-size: 1.6rem;
   font-weight: bold;
   border: none;
@@ -25,15 +25,15 @@
 }
 .filterBox {
   display: block;
-  background: rgba(0,0,0,0);
+  background: $empty;
   margin-right: 1rem;
-  color: white;
+  color: $white;
   font-size: 1.6rem;
   font-weight: bold;
   border: none;
   justify-self: flex-end;
   position: relative;
-  max-width: 400px; /* optional */
+  max-width: 400px;
 }
 .filterBox label {
   margin-right: 1rem;
@@ -41,10 +41,10 @@
 }
 .filterBox select {
   cursor: inherit;
-  background: rgba(0,0,0,0);
+  background: $empty;
   border: none;
   font-weight: bold;
-  color: white;
+  color: $white;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;

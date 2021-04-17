@@ -2,21 +2,31 @@ import React, { Component } from 'react';
 
 export default class SortBar extends Component {
   render(){
+    const bArray = [
+      {id: 1, className:'sortButton selectedButton', buttonName:'ALL'},
+      {id: 2, className:'sortButton', buttonName:'DOCUMENTARY'},
+      {id: 3, className:'sortButton', buttonName:'COMEDY'},
+      {id: 4, className:'sortButton', buttonName:'HORROR'},
+      {id: 5, className:'sortButton', buttonName:'CRIME'}
+    ];
+    const oArray = [
+      {id: 1, optionName: 'RELEASE DATE'},
+      {id: 2, optionName: 'ALPHABET UP'},
+      {id: 3, optionName: 'ALPHABET DOWN'},
+    ];
     return (
       <div className="sortBox">
         <div>
-          <button className="sortButton selectedButton">ALL</button>
-          <button className="sortButton">DOCUMENTARY</button>
-          <button className="sortButton">COMEDY</button>
-          <button className="sortButton">HORROR</button>
-          <button className="sortButton">CRIME</button>
+          {bArray.map(el =>
+            <button key={el.id} className={el.className}>{el.buttonName}</button>
+          )}
         </div>
         <form className="filterBox">
-          <label for="cars">SORT BY: </label>
+          <label>SORT BY: </label>
           <select>
-            <option value="1">RELEASE DATE</option>
-            <option value="2">ALPHABET UP</option>
-            <option value="3">ALPHABET DOWN</option>
+            {oArray.map(el =>
+              <option key={el.id} value={el.id}>{el.optionName}</option>
+            )}
           </select>
         </form>
       </div>
