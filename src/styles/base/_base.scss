@@ -2,10 +2,22 @@ html {
     font-family: sans-serif;
     font-size: 10px;
     background-color: $gray;
+    height: 100%;
+}
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
 }
 .container {
 	display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+}
+.containerVertical {
+	display: flex;
+	flex-direction: column;
+  height: 100%;
 }
 .horizontal{
   flex-direction: row;

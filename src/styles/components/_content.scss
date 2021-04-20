@@ -1,3 +1,5 @@
 .contentCanvas {
   background: $secondaryDark;
+  justify-self: stretch;
+  flex-grow: 1;
 }
