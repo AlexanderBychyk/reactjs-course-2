@@ -6,9 +6,9 @@ export default class MovieCard extends Component {
     super(props);
   }
   render() {
-    const movieName = this.props.movieName ? this.props.movieName : 'name';
-    const movieYear = this.props.movieYear ? this.props.movieYear : 'year';
-    const movieGanre = this.props.movieGanre ? this.props.movieGanre : 'ganre';
+    const movieName = this.props.movieName ?? 'name';
+    const movieYear = this.props.movieYear ?? 'year';
+    const movieGanre = this.props.movieGanre ?? 'ganre';
     return (
       <div className="cardBox">
         <div className="cardPicture"></div>
