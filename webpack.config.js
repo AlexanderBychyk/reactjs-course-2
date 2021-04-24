@@ -19,6 +19,12 @@ module.exports = (env) => {
             presets: ['@babel/preset-env'],
           },
         },
+      }, {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      }, {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       }],
     },
     devtool: isProduction ? 'source-map' : 'eval-cheap-module-source-map',

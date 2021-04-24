@@ -1,0 +1,11 @@
+.logoTittle {
+  color: $primary;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.logoTittle > b {
+  font-weight: bold;
+}

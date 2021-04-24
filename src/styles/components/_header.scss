@@ -1,0 +1,18 @@
+.headerBlock {
+    background-image: url('/src/assets/blur.jpg');
+    background-color: $gray;
+    background-position: center;
+    background-size: 70;
+    height: fit-content;
+    padding-bottom: 10rem;
+    width: 100%;
+    justify-self: flex-start;
+    flex-grow: 0;
+}
+.headerLogo{
+    display: block;
+    margin: 20px;
+    padding: 0;
+    margin-left: $border-header-size;
+    justify-self: flex-start;
+}
