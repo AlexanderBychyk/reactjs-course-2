@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import AddMovieModal from './AddMovieModal';
+
 const addMovieButton = '+ ADD MOVIE'; 
 
 export default class AddMovie extends Component {
@@ -7,6 +9,7 @@ export default class AddMovie extends Component {
     return (
       <div>
         <button className="addMovieButton">{addMovieButton}</button>
+        <AddMovieModal />
       </div>
     );
   }
