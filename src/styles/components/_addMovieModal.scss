@@ -1,0 +1,31 @@
+.addMovieBackground {
+  background-color: $gray;
+  color:white;  
+  margin: 5rem 10rem 5rem 10rem;
+  padding: 1rem;
+  outline: none;
+  border-radius: 2rem;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+.addMovieOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($secondaryDark, 0.85);
+}
+
+.AddMovieModalBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
