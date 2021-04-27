@@ -6,7 +6,7 @@ const addMovieButton = '+ ADD MOVIE';
 
 export default class AddMovie extends Component {
   state = {
-    showAddMovieModal: false,
+    showAddMovieModal: true, //after debug turn into false!!!
   };
 
   handleOpenModal = () => {

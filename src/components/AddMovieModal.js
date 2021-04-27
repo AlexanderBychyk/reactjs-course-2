@@ -11,17 +11,24 @@ const AddMovieModal = (props) => (
     ariaHideApp={false}
   >
     <div className="AddMovieModalBox">
-      <div>
-        <h1>Add Movie</h1>
-        <button onClick={props.handleCloseModal}>X</button>
+      <button className="closeAddMovieModalButton" onClick={props.handleCloseModal}>X</button>
+      <h1>ADD MOVIE</h1>
+      <p>TITLE</p>
+      <input />
+      <p>RELEASE DATE</p>
+      <input />
+      <p>MOVIE URL</p>
+      <input />
+      <p>GANRE</p>
+      <input />
+      <p>OVERVIEW</p>
+      <input />
+      <p>RUNTIME</p>
+      <input />
+      <div>  
+        <button>Reset</button>
+        <button>Submit</button>
       </div>
-      <p>Moive name</p>
-      <input />
-      <p>Moive year</p>
-      <input />
-      <p>Moive ganre</p>
-      <input />
-      <button>Submit</button>
     </div>
   </Modal>
 );
