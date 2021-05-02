@@ -10,7 +10,7 @@ export default class SearchBar extends Component {
         <p className="searchLabel">{searchLabel}</p>
         <form className="searchBox horizontal">
           <input className="searchInput" type="search" placeholder="What do you want to watch?"></input>
-          <button className="searchButton">{searchButton}</button>
+          <button className="buttonTypeOne searchButton">{searchButton}</button>
         </form>
       </div>
     );

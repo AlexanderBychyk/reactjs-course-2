@@ -8,7 +8,6 @@
   border-width: 1px;
   border-style: solid;
   margin: auto;
-  // margin-top: 10%;
 }
 
 .ReactModalPortal .ReactModal__Overlay--after-open {
@@ -28,8 +27,10 @@
   backdrop-filter: blur(10px);
   
 }
-
-.AddMovieModalBox{
+.addMovieModalTitle {
+  margin: 0 2.2rem 0 2.2rem;
+}
+.addMovieModalBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,15 +40,48 @@
   align-self: flex-end;
   width: 2rem;
   color: white;
-  background-color: unset;
-  border-style: unset;
+  font-size: 20px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  position: relative;
 }
-.AddMovieModalLabel {
-  color: $primary;
-  margin: 2rem 2.2rem 1rem 2.2rem;
+.closeButtonLine {
+  background-color: white;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+}
+.closeButtonLine--first {
+  left:0px;
+  top: 50%;
+  transform: translate(0%, -50%) rotate(45deg);
+  height: 2px;
+  width: 100%;
+}
+.closeButtonLine--second {
+  left:50%;
+  top: 0px;
+  transform: translate(-50%, 0%) rotate(45deg);
+  height: 100%;
+  width: 2px;
 }
 
-.AddMovieModalInput {
+.addMovieModalLabel {
+  color: $primary;
+  margin: 2rem 2.2rem 0.5rem 2.2rem;
+}
+.addMovieModalInput-date::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.6;
+  filter: invert(0.8);
+  color: $primary;
+}
+.addMovieModalInput {
   background-color: $secondaryLight;
   border-radius: 5px;
   border-style: solid;
@@ -57,4 +91,28 @@
   color: white;
   padding: 0rem 1rem;
   font-size: 1.5rem;
+}
+.submitAddMovieModalButton {
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+}
+.resetAddMovieModalButton {
+  display:inline;
+  background: unset;
+  color: $primary;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: $primary;
+  border-style:solid;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.AddMovieModalButtonBox {
+  display: flex;
+  justify-content: flex-end;
+  margin: 4rem 2.2rem 2rem 2.2rem;
 }

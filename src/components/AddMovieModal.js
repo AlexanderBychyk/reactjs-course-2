@@ -10,48 +10,52 @@ const AddMovieModal = (props) => (
     overlayClassName="addMovieOverlay"
     ariaHideApp={false}
   >
-    <div className="AddMovieModalBox">
-      {/* <button className="closeAddMovieModalButton" onClick={props.handleCloseModal}>X</button>
-      <h1>ADD MOVIE</h1> */}
-      <h2 className="AddMovieModalLabel">TITLE</h2>
-      <input className="AddMovieModalInput" 
+    <div className="addMovieModalBox">
+      <button className="closeAddMovieModalButton" onClick={props.handleCloseModal}>
+        <div className="closeButtonLine closeButtonLine--first" />
+        <div className="closeButtonLine closeButtonLine--second" />
+      </button> {/* ☒ */}
+      <h1 className="addMovieModalTitle">ADD MOVIE</h1> 
+      <h2 className="addMovieModalLabel">TITLE</h2>
+      <input className="addMovieModalInput" 
              type="input"
              placeholder="Title here"
       
       />
-      <h2 className="AddMovieModalLabel">RELEASE DATE</h2>
-      <input className="AddMovieModalInput" 
-             type="input"
-             placeholder="Title here"
+      <h2 className="addMovieModalLabel">RELEASE DATE</h2>
+      <input className="addMovieModalInput addMovieModalInput-date" 
+             type="date"
+             value="Select Date"
+             placeholder="Select Date"
       
       />
-      <h2 className="AddMovieModalLabel">MOVIE URL</h2>
-      <input className="AddMovieModalInput" 
+      <h2 className="addMovieModalLabel">MOVIE URL</h2>
+      <input className="addMovieModalInput" 
              type="input"
-             placeholder="Title here"
+             placeholder="Movie URL here"
       
       />
-      <h2 className="AddMovieModalLabel">GANRE</h2>
-      <input className="AddMovieModalInput" 
+      <h2 className="addMovieModalLabel">GANRE</h2>
+      <input className="addMovieModalInput" 
              type="input"
-             placeholder="Title here"
+             placeholder="Type ganre"
       
       />
-      <h2 className="AddMovieModalLabel">OVERVIEW</h2>
-      <input className="AddMovieModalInput" 
+      <h2 className="addMovieModalLabel">OVERVIEW</h2>
+      <input className="addMovieModalInput" 
              type="input"
-             placeholder="Title here"
+             placeholder="Overview here"
       
       />
-      <h2 className="AddMovieModalLabel">RUNTIME</h2>
-      <input className="AddMovieModalInput" 
+      <h2 className="addMovieModalLabel">RUNTIME</h2>
+      <input className="addMovieModalInput" 
              type="input"
-             placeholder="Title here"
+             placeholder="Runtime here"
       
       />
-      <div>  
-        <button>Reset</button>
-        <button>Submit</button>
+      <div className="AddMovieModalButtonBox">  
+        <button className="resetAddMovieModalButton">RESET</button>
+        <button className="buttonTypeOne submitAddMovieModalButton">SUBMIT</button>
       </div>
     </div>
   </Modal>
