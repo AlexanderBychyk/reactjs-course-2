@@ -1,7 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-const AddMovieModal = (props) => (
+import ModalWindow from './ModalWindow'
+
+const AddMovieJSX = (
   <Modal
     isOpen={props.showAddMovieModal}
     onRequestClose={props.handleCloseModal}
@@ -19,39 +21,34 @@ const AddMovieModal = (props) => (
       <h2 className="addMovieModalLabel">TITLE</h2>
       <input className="addMovieModalInput" 
              type="input"
-             placeholder="Title here"
-      
+             placeholder="Title here"     
       />
       <h2 className="addMovieModalLabel">RELEASE DATE</h2>
       <input className="addMovieModalInput addMovieModalInput-date" 
              type="date"
              value="Select Date"
              placeholder="Select Date"
-      
+          
       />
       <h2 className="addMovieModalLabel">MOVIE URL</h2>
       <input className="addMovieModalInput" 
              type="input"
-             placeholder="Movie URL here"
-      
+             placeholder="Movie URL here"   
       />
       <h2 className="addMovieModalLabel">GANRE</h2>
       <input className="addMovieModalInput" 
              type="input"
-             placeholder="Type ganre"
-      
+             placeholder="Type ganre"    
       />
       <h2 className="addMovieModalLabel">OVERVIEW</h2>
       <input className="addMovieModalInput" 
              type="input"
              placeholder="Overview here"
-      
       />
       <h2 className="addMovieModalLabel">RUNTIME</h2>
       <input className="addMovieModalInput" 
              type="input"
-             placeholder="Runtime here"
-      
+             placeholder="Runtime here"   
       />
       <div className="AddMovieModalButtonBox">  
         <button className="resetAddMovieModalButton">RESET</button>
@@ -59,6 +56,10 @@ const AddMovieModal = (props) => (
       </div>
     </div>
   </Modal>
+)
+
+const AddMovieModal = (props) => (
+  <ModalWindow addMovieJSX={AddMovieJSX} />
 );
 
 export default AddMovieModal;
