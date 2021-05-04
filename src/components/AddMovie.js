@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import AddMovieModal from './AddMovieModal';
+import ModalWindow from './ModalWindow';
 
 const addMovieButton = '+ ADD MOVIE'; 
 

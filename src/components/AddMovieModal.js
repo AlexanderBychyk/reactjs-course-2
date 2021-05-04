@@ -1,22 +1,14 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-import ModalWindow from './ModalWindow'
+import ModalWindow from './ModalWindow';
 
 const AddMovieJSX = (
-  <Modal
-    isOpen={props.showAddMovieModal}
-    onRequestClose={props.handleCloseModal}
-    contentLabel="Add Movie"
-    className="addMovieBackground"
-    overlayClassName="addMovieOverlay"
-    ariaHideApp={false}
-  >
     <div className="addMovieModalBox">
-      <button className="closeAddMovieModalButton" onClick={props.handleCloseModal}>
+      {/* <button className="closeAddMovieModalButton" onClick={props.handleCloseModal}>
         <div className="closeButtonLine closeButtonLine--first" />
         <div className="closeButtonLine closeButtonLine--second" />
-      </button> {/* ☒ */}
+      </button> */}
       <h1 className="addMovieModalTitle">ADD MOVIE</h1> 
       <h2 className="addMovieModalLabel">TITLE</h2>
       <input className="addMovieModalInput" 
@@ -55,11 +47,12 @@ const AddMovieJSX = (
         <button className="buttonTypeOne submitAddMovieModalButton">SUBMIT</button>
       </div>
     </div>
-  </Modal>
-)
+);
+
 
 const AddMovieModal = (props) => (
-  <ModalWindow addMovieJSX={AddMovieJSX} />
+  console.log(props),
+  <ModalWindow addMovieJSX={AddMovieJSX} showAddMovieModal={props.showAddMovieModal} handleCloseModal={props.handleCloseModal}/>
 );
 
 export default AddMovieModal;
