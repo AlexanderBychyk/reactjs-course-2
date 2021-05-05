@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 import Modal from 'react-modal';
-// const ModalWindow = (props) => (
-//   this.props.addMovieJSX
-// );
-
-// export default ModalWindow;
 
 export default class ModalWindow extends Component {
   constructor(props) {
@@ -13,7 +8,6 @@ export default class ModalWindow extends Component {
   }
   render () {
     return (
-      console.log(this.props),
       <Modal
         isOpen={this.props.showAddMovieModal}
         onRequestClose={this.props.handleCloseModal}
@@ -22,7 +16,13 @@ export default class ModalWindow extends Component {
         overlayClassName="addMovieOverlay"
         ariaHideApp={false}
       >
-      {this.props.addMovieJSX}
+        <div className="addMovieModalBox">
+      <button className="closeAddMovieModalButton" onClick={this.props.handleCloseModal}>
+        <div className="closeButtonLine closeButtonLine--first" />
+        <div className="closeButtonLine closeButtonLine--second" />
+      </button>
+      {this.props.jsx}
+        </div>
       </Modal>
     );
   }
