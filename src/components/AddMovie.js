@@ -10,34 +10,39 @@ const AddMovieJSX = (
     <h2 className="addMovieModalLabel">TITLE</h2>
     <input className="addMovieModalInput" 
            type="input"
-           placeholder="Title here"     
+           placeholder="Title here" 
+           defaultValue=""    
     />
     <h2 className="addMovieModalLabel">RELEASE DATE</h2>
     <input className="addMovieModalInput addMovieModalInput-date" 
            type="date"
-           value="Select Date"
            placeholder="Select Date"
+           defaultValue=""    
         
     />
     <h2 className="addMovieModalLabel">MOVIE URL</h2>
     <input className="addMovieModalInput" 
            type="input"
            placeholder="Movie URL here"   
+           defaultValue=""    
     />
     <h2 className="addMovieModalLabel">GANRE</h2>
     <input className="addMovieModalInput" 
            type="input"
            placeholder="Type ganre"    
+           defaultValue=""    
     />
     <h2 className="addMovieModalLabel">OVERVIEW</h2>
     <input className="addMovieModalInput" 
            type="input"
            placeholder="Overview here"
+           defaultValue=""    
     />
     <h2 className="addMovieModalLabel">RUNTIME</h2>
     <input className="addMovieModalInput" 
            type="input"
            placeholder="Runtime here"   
+           defaultValue=""    
     />
     <div className="AddMovieModalButtonBox">  
       <button className="resetAddMovieModalButton">RESET</button>
@@ -47,21 +52,21 @@ const AddMovieJSX = (
 );
 
 export default class AddMovie extends Component {
-  state = {
-    showAddMovieModal: true, //after debug turn into false!!!
-  };
+  constructor(props){
+    super(props)
+    this.state = {
+      showAddMovieModal: true, //after debug turn into false!!!
+    };
+    this.handleModal = this.handleModal.bind(this)
+  }
 
-  handleOpenModal = () => {
-    this.setState(() => ({showAddMovieModal: true}));
-  }
-  handleCloseModal = () => {
-    this.setState(() => ({showAddMovieModal: false}));
-  }
+  handleModal = () => this.setState((prevState) => ({showAddMovieModal: !prevState.showAddMovieModal}));
+
   render () {
     return (
       <div>
-        <button className="addMovieButton" onClick={this.handleOpenModal}>{addMovieButton}</button>
-        <ModalWindow jsx={AddMovieJSX} showAddMovieModal={this.state.showAddMovieModal} handleCloseModal={this.handleCloseModal} />
+        <button className="addMovieButton" onClick={this.handleModal}>{addMovieButton}</button>
+        <ModalWindow jsx={AddMovieJSX} handleModal={this.handleModal} showAddMovieModal={this.state.showAddMovieModal} />
       </div>
     );
   }

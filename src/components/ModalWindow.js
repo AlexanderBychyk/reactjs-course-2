@@ -10,14 +10,14 @@ export default class ModalWindow extends Component {
     return (
       <Modal
         isOpen={this.props.showAddMovieModal}
-        onRequestClose={this.props.handleCloseModal}
+        onRequestClose={this.props.handleModal}
         contentLabel="Add Movie"
         className="addMovieBackground"
         overlayClassName="addMovieOverlay"
         ariaHideApp={false}
       >
         <div className="addMovieModalBox">
-      <button className="closeAddMovieModalButton" onClick={this.props.handleCloseModal}>
+      <button className="closeAddMovieModalButton" onClick={this.props.handleModal}>
         <div className="closeButtonLine closeButtonLine--first" />
         <div className="closeButtonLine closeButtonLine--second" />
       </button>
