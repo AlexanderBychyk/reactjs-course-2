@@ -11,6 +11,7 @@ export default class MovieCard extends Component {
     const movieGanre = this.props.movieGanre ?? 'ganre';
     return (
       <div className="cardBox">
+        <button className="cardButton">...</button>
         <div className="cardPicture"></div>
         <div className="container">
           <h1 className="cardName">{movieName}</h1>

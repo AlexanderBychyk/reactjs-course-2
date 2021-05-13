@@ -55,7 +55,7 @@ export default class AddMovie extends Component {
   constructor(props){
     super(props)
     this.state = {
-      showAddMovieModal: true, //after debug turn into false!!!
+      showAddMovieModal: false,
     };
     this.handleModal = this.handleModal.bind(this)
   }

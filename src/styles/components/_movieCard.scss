@@ -39,3 +39,17 @@
   color: $gray;
   margin: 0;
 }
+.cardButton {
+  background-color: $gray;
+  border-style: unset;
+  transform: rotate(90deg);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  // margin: 0;
+  height: fit-content;
+  position: relative;
+  // top: 40px;
+  right: 100px;
+}
