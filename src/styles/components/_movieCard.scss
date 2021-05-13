@@ -4,6 +4,13 @@
   margin-top: 1rem;
   align-self: center;
   justify-self: center;
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.cardBox:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: rgba($gray,0.25);
 }
 .cardPicture {
   display: block;
@@ -25,12 +32,19 @@
   color: $gray;
   margin-bottom: 0;
 }
+.cardBox:hover .cardYear{
+  color: $primary;
+  border-color: $white;
+}
 
 .cardName {
   font-size: 16px;
   align-self: center;
   color: $white;
   margin-bottom: 0;
+}
+.cardBox:hover .cardName {
+  color: $primary;
 }
 
 .cardGanre {
@@ -39,17 +53,63 @@
   color: $gray;
   margin: 0;
 }
+.cardBox:hover .cardGanre{
+  color: $white;
+}
 .cardButton {
-  background-color: $gray;
+  background-color: $secondaryDark;
   border-style: unset;
-  transform: rotate(90deg);
   color: white;
   font-size: 20px;
   text-align: center;
   padding: 0;
-  // margin: 0;
+  margin: 0;
   height: fit-content;
-  position: relative;
-  // top: 40px;
-  right: 100px;
+  position: absolute;
+  left: 21rem;
+  top: 2rem;
+  height: 3rem;
+  width: 3rem; 
+  line-height: 20px;
+  border-radius: 50%;
+  background-image: url('/src/assets/kebab.svg');
+  background-size: cover;
+}
+
+.cardOptions {
+  top: 2rem;
+  left: 10rem;
+  position: absolute;
+  background-color: $secondaryDark;
+  border-radius: 0.75rem;
+  border-style:unset;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+  width: 14rem;
+}
+
+.cardOptionButton {
+  display: block;
+  width: 100%;
+  border-style: unset;
+  background-color: $secondaryDark;
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  text-align: left;
+}
+.cardOptionButton:hover {
+  border-style: unset;
+  background-color: $primary;
+  color: white;
+  cursor: pointer;
+}
+.cardOptionClose {
+  padding: 0px;
+  width: fit-content;
+  float: right;
+  margin: 1px 7px 1px 0;
+}
+.cardOptionClose:hover {
+  background-color: $secondaryDark;
 }

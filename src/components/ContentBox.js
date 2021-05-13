@@ -7,6 +7,7 @@ const movieArray = [
   {id: 2, movieName:'movie2', movieYear:2011, movieGanre:'Romance'},
   {id: 3, movieName:'movie3', movieYear:2015, movieGanre:'Cartoon'}
 ];
+window.$movieCount = movieArray.length;
 
 export default class ContentBox extends Component {
   render() {
@@ -19,7 +20,8 @@ export default class ContentBox extends Component {
             movieYear={el.movieYear} 
             movieGanre={el.movieGanre}
           />
-        )}
+        )
+        }
       </div>
     );
   }
