@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 const movieArray = [
   {id: 1, movieName:'movie1', movieYear:2008, movieGanre:'Fun, horror'},
   {id: 2, movieName:'movie2', movieYear:2011, movieGanre:'Romance'},
-  {id: 3, movieName:'movie3', movieYear:2015, movieGanre:'Cartoon'}
+  {id: 3, movieName:'movie3', movieYear:2015, movieGanre:'Cartoon'},
 ];
 window.$movieCount = movieArray.length;
 
