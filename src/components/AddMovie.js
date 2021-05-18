@@ -26,10 +26,10 @@ const AddMovieJSX = (
            placeholder="Movie URL here"   
            defaultValue=""    
     />
-    <h2 className="addMovieModalLabel">GANRE</h2>
+    <h2 className="addMovieModalLabel">GENRE</h2>
     <input className="addMovieModalInput" 
            type="input"
-           placeholder="Type ganre"    
+           placeholder="Type genre"    
            defaultValue=""    
     />
     <h2 className="addMovieModalLabel">OVERVIEW</h2>
@@ -57,7 +57,6 @@ export default class AddMovie extends Component {
     this.state = {
       showAddMovieModal: false,
     };
-    this.handleModal = this.handleModal.bind(this)
   }
 
   handleModal = () => this.setState((prevState) => ({showAddMovieModal: !prevState.showAddMovieModal}));

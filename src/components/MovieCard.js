@@ -38,10 +38,10 @@ const editOptionJSX = (
            placeholder="Movie URL here"   
            defaultValue=""    
     />
-    <h2 className="addMovieModalLabel">GANRE</h2>
+    <h2 className="addMovieModalLabel">GENRE</h2>
     <input className="addMovieModalInput" 
            type="input"
-           placeholder="Type ganre"    
+           placeholder="Type genre"    
            defaultValue=""    
     />
     <h2 className="addMovieModalLabel">OVERVIEW</h2>
@@ -112,7 +112,7 @@ export default class MovieCard extends Component {
   render() {
     const movieName = this.props.movieName ?? 'name';
     const movieYear = this.props.movieYear ?? 'year';
-    const movieGanre = this.props.movieGanre ?? 'ganre';
+    const movieGenre = this.props.movieGenre ?? 'genre';
     return (
       <div className="cardBox"
            onMouseEnter={this.handleMouseHoverCard}
@@ -127,7 +127,7 @@ export default class MovieCard extends Component {
           <h1 className="cardName">{movieName}</h1>
           <h1 className="cardYear">{movieYear}</h1>
         </div>
-        <h1 className="cardGanre">{movieGanre}</h1>
+        <h1 className="cardGenre">{movieGenre}</h1>
       </div>
     );
   }
@@ -136,11 +136,11 @@ export default class MovieCard extends Component {
 MovieCard.propTypes = {
   movieName: PropTypes.string,
   movieYear: PropTypes.number,
-  movieGanre: PropTypes.string
+  movieGenre: PropTypes.string
 }
 
 MovieCard.defaultProps = {
   movieName: 'name',
   movieYear: 2000,
-  movieGanre: 'ganre'
+  movieGenre: 'genre'
 }

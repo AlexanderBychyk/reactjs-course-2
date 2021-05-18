@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import MovieCard from './MovieCard';
 
 const movieArray = [
-  {id: 1, movieName:'movie1', movieYear:2008, movieGanre:'Fun, horror'},
-  {id: 2, movieName:'movie2', movieYear:2011, movieGanre:'Romance'},
-  {id: 3, movieName:'movie3', movieYear:2015, movieGanre:'Cartoon'},
+  {id: 1, movieName:'movie1', movieYear:2008, movieGenre:'Fun, horror'},
+  {id: 2, movieName:'movie2', movieYear:2011, movieGenre:'Romance'},
+  {id: 3, movieName:'movie3', movieYear:2015, movieGenre:'Cartoon'},
 ];
 window.$movieCount = movieArray.length;
 
@@ -18,7 +18,7 @@ export default class ContentBox extends Component {
             key={el.id} 
             movieName={el.movieName} 
             movieYear={el.movieYear} 
-            movieGanre={el.movieGanre}
+            movieGenre={el.movieGenre}
           />
         )
         }
