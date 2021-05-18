@@ -32,3 +32,15 @@ body {
 h1 {
   color: $white;
 }
+.buttonTypeOne {
+  display:inline;
+  background: $primary;
+  color: $white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: $primary;
+  border-style:solid;
+}
